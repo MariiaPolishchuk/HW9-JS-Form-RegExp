@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW9 JS Form RegExp</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <form id="mainForm" class="main-form">
+                        <h3>TO-DO-List</h3>
+                        <label for="myInput" class="form-label">Write some list</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="myInput" autofocus>
+                            <button class="btn btn-success" type="submit" data-action="add-item" title="Add">+</button>
+                            <!-- <button class="reset_btn" id="resetBTN" type="reset" data-action="reset-page" title="Reset"></button> -->
+                        </div>
+                        <div class="form-text text-danger" id="errorText">Invalid</div>
+                    </form>
+
+                    <ul class="list" id="myList"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>

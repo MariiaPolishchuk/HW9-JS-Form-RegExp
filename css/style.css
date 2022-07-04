@@ -1,0 +1,95 @@
+html, body, .wrapper {
+    height: 100%;
+}
+
+body {
+    font-size: 16px;
+    background: rgb(0,117,198);
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 300px;
+    padding: 10px;
+    border-right: 0;
+    border: 0;
+}
+
+button {
+    border: 0;
+}
+
+.btn-success {
+    background-color: #008dee;
+    color: whitesmoke;
+}
+
+.row {
+    justify-content: center;
+    padding: 20px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    font-size: 20px;
+}
+.btn-remove {
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: red;
+    border: 0;
+    border-radius: 16px;
+}
+
+ul {
+    padding: 20px;
+    width: 30%;
+}
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    background-color: #f7d92d;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+li:hover {
+    cursor: pointer;
+}
+li.done {
+    background-color: #86eb22;
+}
+
+#errorText {
+    display: none;
+}
+form.invalid #errorText {
+    display: block;
+}
+form.invalid input {
+    color: #e82d2d !important;
+    border-color: #e82d2d !important;
+    box-shadow: 0 0 0 0.25rem rgba(232,45,45, .25) !important;
+}
